@@ -8,4 +8,5 @@ This repository contains small CSS projects and exercises for learning and pract
 3. Image Gallery/Grid
 4. Card Layouts
 5. Animations
+   
 ...
