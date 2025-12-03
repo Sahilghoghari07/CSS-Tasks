@@ -1,0 +1,303 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/plugins/fonts/inter/Inter18pt-Medium.eot');
+    src: url('../assets/plugins/fonts/inter/Inter18pt-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../assets/plugins/fonts/inter/Inter18pt-Medium.woff2') format('woff2'),
+        url('../assets/plugins/fonts/inter/Inter18pt-Medium.woff') format('woff'),
+        url('../assets/plugins/fonts/inter/Inter18pt-Medium.ttf') format('truetype'),
+        url('../assets/plugins/fonts/inter/Inter18pt-Medium.svg#Inter18pt-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/plugins/fonts/inter/Inter18pt-Bold.eot');
+    src: url('../assets/plugins/fonts/inter/Inter18pt-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../assets/plugins/fonts/inter/Inter18pt-Bold.woff2') format('woff2'),
+        url('../assets/plugins/fonts/inter/Inter18pt-Bold.woff') format('woff'),
+        url('../assets/plugins/fonts/inter/Inter18pt-Bold.ttf') format('truetype'),
+        url('../assets/plugins/fonts/inter/Inter18pt-Bold.svg#Inter18pt-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', 'sans-serif';
+    box-sizing: border-box;
+}
+
+/* header css */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px 60px;
+    padding: 20px 0px;
+}
+
+.navbar-brand img {
+    height: 80px;
+    width: 150px;
+}
+
+.navbar-menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-menu ul li a {
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0px 20px;
+}
+
+.navbar-menu ul li a:hover {
+    color: #2eedaf;
+}
+
+.navbar-menu ul li span {
+    color: #ffffff;
+}
+
+.navbar-menu .btn-secondary {
+    padding: 10px 20px;
+    border: 1px solid #2eedaf;
+    border-radius: 5px;
+}
+
+.navbar-menu .btn-secondary:hover {
+    color: #170577;
+    background-color: #2eedaf;
+}
+
+/* content css */
+
+#Hero {
+    height: 70vh;
+    margin-top: -150px;
+    background: linear-gradient(rgb(0,0,56,0.6), rgb(0,0,56,0.6)), url('../assets/images/hero-bg.jpg');
+    background-size: cover;
+}
+
+.hero-section {
+    margin: 0px 350px;
+    padding: 0px 10px;
+    color: #ffffff;
+}
+
+.hero-section h1 {
+    padding-top: 15rem;
+    margin-bottom: 10px;
+    font-size: 3rem;
+}
+
+.hero-section span {
+    color: #2eedaf;
+}
+
+.hero-section .hero-paragraph {
+    width: 50%;
+}
+
+.hero-section .hero-paragraph p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+.hero-section .hero-paragraph a {
+    background-color: #2eedaf;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-weight: 600;
+    color: #170577;
+}
+
+.hero-section .hero-paragraph a:hover {
+    background-color: #2de1b0;
+}
+
+#Process {
+    background-color: #f8f9fa;
+    height: 80vh;
+    padding: 100px 0px;
+}
+
+#Process .row h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#Process .row p {
+    color: #6c7985;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+#Process .card {
+    display: flex;
+    margin: auto;
+    width: 70%;
+    padding: 0px 20px;
+}
+
+#Process .card-1,
+.card-2,
+.card-3 {
+    border: 1px solid #e9ecef;
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 20vw;
+    padding: 45px;
+    margin: 0px 20px;
+}
+
+#Process .card h3 {
+    font-size: 56px;
+    font-weight: 500;
+    color: #2350d8;
+    margin-bottom: 20px;
+}
+
+#Process .card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#Process .card p {
+    color: #6c7985;
+}
+
+#Services {
+    padding: 100px 0px;
+    text-align: center;
+}
+
+#Services .row {
+    width: 40%;
+    margin: auto;
+}
+
+#Services .row h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#Services .row p {
+    color: #6c7985;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+#Services .box {
+    display: flex;
+    margin-top: 80px;
+    justify-content: center;
+}
+
+#Services .box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#Services .box .box-1,
+.box-2,
+.box-3,
+.box-4 {
+    width: 15vw;
+    padding: 0px 20px;
+}
+
+#Services .box p {
+    color: #6c7985;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+/* footer */
+
+footer {
+    background-color: #151e28;
+    padding: 40px 0px;
+}
+
+footer .container {
+    width: 60%;
+    margin: auto;
+}
+
+footer img {
+    height: 50px;
+    width: 72px;
+}
+
+footer hr {
+    border-color: #343a40;
+    margin: 40px 0px;
+}
+
+footer .row .col {
+    width: 25%;
+    padding: 0px 10px;
+}
+
+footer .row .footer-info p {
+    font-size: 16px;
+}
+
+footer .row .footer-contact p {
+    font-size: 20px;
+}
+
+footer .row .footer-links p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+footer p {
+    color: #6c7985;
+    font-size: 12px;
+    margin-bottom: 16px;
+}
+
+footer h4 {
+    color: #6c7985;
+    font-size: 12px;
+    margin-top: 32px;
+    margin-bottom: 8px;
+}
+
+footer .row {
+    display: flex;
+}
+
+footer .row .left {
+    width: 80%;
+}
+
+footer .row .right {
+    display: flex;
+    font-size: 12px;
+    width: 20%;
+    justify-content: right;
+}
+
+footer .row a {
+    color: #6c7985;
+    text-decoration: none;
+    margin: 0px 5px;
+}
+
+footer .row a:hover {
+    color: #2eedaf;
+}

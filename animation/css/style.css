@@ -1,0 +1,293 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.box {
+  min-height: 35vh;
+  width: 100%;
+  flex: 1 0 40%;
+  border: 2px solid black;
+  padding: 30px;
+}
+
+.box:last-child {
+  background-color: #bee9f8;
+}
+
+/* Rainbow Progress Bar */
+
+.progress-bar {
+  height: 20px;
+  width: 0%;
+  border-radius: 10px;
+  background: linear-gradient(to right,
+      #ff0000,
+      #ffa500,
+      #ffff00,
+      #008000,
+      #00ffff,
+      #0000ff,
+      #ee82ee);
+  animation: progressbar 3s infinite;
+}
+
+@keyframes progressbar {
+  0% {
+    width: 0%;
+  }
+
+  25% {
+    width: 25%;
+  }
+
+  50% {
+    width: 50%;
+  }
+
+  75% {
+    width: 75%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+/* Flip Card (3D Transform) */
+
+.card-container {
+  perspective: 1000px;
+  height: 200px;
+  width: 350px;
+}
+
+.card {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+  animation: flipcard 5s alternate infinite;
+}
+
+.card-face {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  font-size: 24px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.front {
+  background-color: #4caf50;
+  color: #ffffff;
+}
+
+.back {
+  color: #ffffff;
+  background-color: #f17c59;
+  transform: rotateY(180deg);
+}
+
+@keyframes flipcard {
+
+  0%,
+  45% {
+    transform: rotateY(0deg);
+  }
+
+  55%,
+  100% {
+    transform: rotateY(180deg);
+  }
+}
+
+/* Typing Text Effect */
+
+.typing-text {
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 22px;
+  font-family: 'Courier New';
+  border-right: 2px solid #525453;
+  animation: typing 6s steps(100, end) forwards, blinkCursor 0.6s infinite;
+}
+
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinkCursor {
+
+  0%,
+  100% {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: #525453;
+  }
+}
+
+/* Loading Spinner */
+
+.spinner {
+  width: 70px;
+  height: 70px;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Bouncing Ball */
+
+.ground {
+  height: 25vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.ball {
+  height: 55px;
+  width: 55px;
+  background: radial-gradient(circle, #ff4d4d, #ff0000);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0) scaleX(1.2) scaleY(0.8);
+  }
+
+  25% {
+    transform: translateY(-150px) scaleX(0.9) scaleY(1.1);
+  }
+
+  50% {
+    transform: translateY(0) scaleX(1.2) scaleY(0.8);
+  }
+
+  75% {
+    transform: translateY(-80px) scaleX(0.9) scaleY(1.1);
+  }
+
+  100% {
+    transform: translateY(0) scaleX(1.2) scaleY(0.8);
+  }
+}
+
+/* Animated Story */
+
+.sky {
+  position: relative;
+  min-height: 30vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.sun {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 50%;
+  bottom: -100px;
+  transform: translateX(-50%);
+  background: radial-gradient(circle, #FFD700, #FFA500);
+  border-radius: 50%;
+  animation: sunrise 5s ease-out forwards;
+  animation-delay: 1s;
+}
+
+.cloud {
+  position: absolute;
+  top: 10px;
+  height: 50px;
+  width: 100px;
+  background-color: #ffffff;
+  border-radius: 50px;
+  box-shadow: 60px 0 #ffffff, 30px -20px #ffffff;
+  opacity: 0;
+}
+
+.cloud1 {
+  top: 80px;
+  animation: move 20s linear infinite;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+.cloud2 {
+  top: 50px;
+  animation: move 25s linear infinite;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+
+.car {
+  position: relative;
+}
+
+.car img {
+  height: 70px;
+  width: 250px;
+  top: 200px;
+  position: absolute;
+  opacity: 0;
+  animation-delay: 15s;
+  animation: move 15s linear infinite;
+}
+
+@keyframes sunrise {
+  to {
+    bottom: 200px;
+  }
+}
+
+@keyframes move {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(80vw);
+  }
+}

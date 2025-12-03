@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Start Page Template</title>
+    <style>
+        /* common css */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Montserrat", "sans-serif";
+            line-height: 1.5;
+        }
+
+        h1 {
+            font-size: 64px;
+            color: #ffffff;
+            font-weight: 400;
+            margin: 16px;
+        }
+
+        h2 {
+            font-size: 36px;
+            font-weight: 400;
+            margin: 10px 0px;
+        }
+
+        p {
+            font-family: "Lato", "sans-serif";
+        }
+
+        .text-dark {
+            color: #000000;
+            margin: 10px 0;
+            font-size: 18px;
+            font-weight: 400;
+            padding: 32px 0;
+            line-height: 1.5;
+        }
+
+        .text-gray {
+            color: #757575;
+            font-size: 15px;
+            margin: 15px 0;
+            line-height: 1.5;
+        }
+
+        section {
+            padding: 64px 16px;
+        }
+
+        .container {
+            max-width: 980px;
+            margin: auto;
+            display: flex;
+        }
+
+        .float-left {
+            width: 67%;
+            max-height: 384px;
+            max-width: 653px;
+        }
+
+        .float-right {
+            width: 33%;
+            max-height: 328px;
+            max-width: 326px;
+            text-align: center;
+        }
+
+        .container i {
+            color: #f44336;
+            font-size: 200px;
+            padding: 64px 0;
+        }
+
+        /* header css */
+
+        header {
+            background-color: #f44336;
+            position: sticky;
+            top: 0;
+            font-size: 18px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        }
+
+        header a {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 12px 24px;
+            float: left;
+        }
+
+        header a:hover {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        header .active {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        /* hero section */
+
+        .hero-section {
+            background-color: #f44336;
+            text-align: center;
+            padding: 105px 16px;
+        }
+
+        .hero-section p {
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: 500;
+            margin: 24px 0px;
+        }
+
+        .hero-section .btn-dark {
+            color: #ffffff;
+            background-color: #000000;
+            padding: 12px 24px;
+            font-size: 18px;
+            margin-top: 16px;
+            border: none;
+            font-family: "Montserrat", "sans-serif";
+        }
+
+        .hero-section .btn-dark:hover {
+            color: #000000;
+            background-color: #cccccc;
+            cursor: pointer;
+        }
+
+        /* coffee section */
+
+        .coffee-section {
+            background-color: #f1f1f1;
+        }
+
+        /* end section */
+
+        .end-section {
+            background-color: #666666;
+            text-align: center;
+            padding: 64px 16px;
+        }
+
+        .end-section h2 {
+            margin: 16px;
+            color: #ffffff;
+            font-size: 24px;
+        }
+
+        /* footer css */
+
+        footer {
+            padding: 64px 16px;
+            text-align: center;
+        }
+
+        footer .social {
+            padding: 32px 0;
+            font-size: 24px;
+        }
+
+        footer .social i {
+            color: #666666;
+        }
+
+        footer .social i:hover {
+            color: #a3a3a3;
+        }
+
+        footer p {
+            margin: 15px 0;
+            color: #666666;
+            font-size: 15px;
+        }
+
+        footer a {
+            text-decoration: underline;
+            color: #666666;
+        }
+
+        .toggle-menu {
+            position: relative;
+            /* display: none; */
+        }
+
+        .toggle-menu input,
+        .toggle-menu img {
+            position: absolute;
+            height: 30px;
+            width: 30px;
+            right: 20px;
+            top: 7px;
+        }
+        .toggle-menu img {
+            pointer-events: none;
+        }
+
+        @media (max-width: 767.98px) {
+            header a {
+                opacity: 0;
+                pointer-events: none;
+            }
+
+            h2 {
+                font-size: 32px;
+            }
+
+            .text-dark {
+                font-size: 16px;
+            }
+
+            .text-gray {
+                font-size: 13px;
+            }
+
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .container i {
+                font-size: 150px;
+                padding: 10px 0;
+            }
+            .toggle-menu input{
+                opacity: 0;
+            }
+        }
+        /* header a{
+            opacity: 0;
+            pointer-events: none;
+        } */
+
+
+        /* 
+
+        .toggle-menu input {
+            opacity: 0;
+        }
+
+
+        @media (max-width:576px) {
+            a {
+                display: none;
+            }
+
+            .toggle-menu {
+                display: block;
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- Header section -->
+    <header>
+        <a href="./index.html" class="active">Home</a>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+        <div class="toggle-menu">
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <img src="./assets/icons/list.svg" alt="list">
+        </div>
+    </header>
+    <!-- content -->
+    <main>
+        <!-- hero section -->
+        <section class="hero-section">
+            <div class="hero">
+                <h1>START PAGE</h1>
+                <p>Template by w3.css</p>
+                <button class="btn-dark">Get Started</button>
+            </div>
+        </section>
+        <section class="anchor-section">
+            <div class="container">
+                <div class="float-left">
+                    <h2>Lorem Ipsum</h2>
+                    <p class="text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p class="text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed
+                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+                    </p>
+                </div>
+                <div class="float-right">
+                    <i class="fa-solid fa-anchor"></i>
+                </div>
+            </div>
+        </section>
+        <section class="coffee-section">
+            <div class="container">
+                <div class="float-right">
+                    <i class="fa-solid fa-mug-saucer"></i>
+                </div>
+                <div class="float-left">
+                    <h2>Lorem Ipsum</h2>
+                    <p class="text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p class="text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed
+                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="end-section">
+            <h2>Quote of the day: live life</h2>
+        </section>
+    </main>
+    <!-- Footer section -->
+    <footer>
+        <div class="social">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-square-snapchat"></i>
+            <i class="fa-brands fa-pinterest-p"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+        <p>Powered by <a href="#">w3.css</a></p>
+    </footer>
+</body>
+
+</html>

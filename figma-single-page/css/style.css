@@ -1,0 +1,567 @@
+/* Monda fonts */
+
+@font-face {
+    font-family: 'Monda';
+    src: url('../assets/plugins/fonts/Monda/Monda-Regular.eot');
+    src: url('../assets/plugins/fonts/Monda/Monda-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../assets/plugins/fonts/Monda/Monda-Regular.woff2') format('woff2'),
+        url('../assets/plugins/fonts/Monda/Monda-Regular.woff') format('woff'),
+        url('../assets/plugins/fonts/Monda/Monda-Regular.ttf') format('truetype'),
+        url('../assets/plugins/fonts/Monda/Monda-Regular.svg#Monda-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Monda';
+    src: url('../assets/plugins/fonts/Monda/Monda-Medium.eot');
+    src: url('../assets/plugins/fonts/Monda/Monda-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../assets/plugins/fonts/Monda/Monda-Medium.woff2') format('woff2'),
+        url('../assets/plugins/fonts/Monda/Monda-Medium.woff') format('woff'),
+        url('../assets/plugins/fonts/Monda/Monda-Medium.ttf') format('truetype'),
+        url('../assets/plugins/fonts/Monda/Monda-Medium.svg#Monda-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Monda';
+    src: url('../assets/plugins/fonts/Monda/Monda-SemiBold.eot');
+    src: url('../assets/plugins/fonts/Monda/Monda-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../assets/plugins/fonts/Monda/Monda-SemiBold.woff2') format('woff2'),
+        url('../assets/plugins/fonts/Monda/Monda-SemiBold.woff') format('woff'),
+        url('../assets/plugins/fonts/Monda/Monda-SemiBold.ttf') format('truetype'),
+        url('../assets/plugins/fonts/Monda/Monda-SemiBold.svg#Monda-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Monda';
+    src: url('../assets/plugins/fonts/Monda/Monda-Bold.eot');
+    src: url('../assets/plugins/fonts/Monda/Monda-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../assets/plugins/fonts/Monda/Monda-Bold.woff2') format('woff2'),
+        url('../assets/plugins/fonts/Monda/Monda-Bold.woff') format('woff'),
+        url('../assets/plugins/fonts/Monda/Monda-Bold.ttf') format('truetype'),
+        url('../assets/plugins/fonts/Monda/Monda-Bold.svg#Monda-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Inter fonts */
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/plugins/fonts/Inter/Inter18pt-Bold.eot');
+    src: url('../assets/plugins/fonts/Inter/Inter18pt-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../assets/plugins/fonts/Inter/Inter18pt-Bold.woff2') format('woff2'),
+        url('../assets/plugins/fonts/Inter/Inter18pt-Bold.woff') format('woff'),
+        url('../assets/plugins/fonts/Inter/Inter18pt-Bold.ttf') format('truetype'),
+        url('../assets/plugins/fonts/Inter/Inter18pt-Bold.svg#Inter18pt-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/plugins/fonts/Inter/Inter18pt-Italic.eot');
+    src: url('../assets/plugins/fonts/Inter/Inter18pt-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../assets/plugins/fonts/Inter/Inter18pt-Italic.woff2') format('woff2'),
+        url('../assets/plugins/fonts/Inter/Inter18pt-Italic.woff') format('woff'),
+        url('../assets/plugins/fonts/Inter/Inter18pt-Italic.ttf') format('truetype'),
+        url('../assets/plugins/fonts/Inter/Inter18pt-Italic.svg#Inter18pt-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/plugins/fonts/Inter/Inter18pt-Medium.eot');
+    src: url('../assets/plugins/fonts/Inter/Inter18pt-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../assets/plugins/fonts/Inter/Inter18pt-Medium.woff2') format('woff2'),
+        url('../assets/plugins/fonts/Inter/Inter18pt-Medium.woff') format('woff'),
+        url('../assets/plugins/fonts/Inter/Inter18pt-Medium.ttf') format('truetype'),
+        url('../assets/plugins/fonts/Inter/Inter18pt-Medium.svg#Inter18pt-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/plugins/fonts/Inter/Inter18pt-Regular.eot');
+    src: url('../assets/plugins/fonts/Inter/Inter18pt-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../assets/plugins/fonts/Inter/Inter18pt-Regular.woff2') format('woff2'),
+        url('../assets/plugins/fonts/Inter/Inter18pt-Regular.woff') format('woff'),
+        url('../assets/plugins/fonts/Inter/Inter18pt-Regular.ttf') format('truetype'),
+        url('../assets/plugins/fonts/Inter/Inter18pt-Regular.svg#Inter18pt-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Common css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #ffffff;
+    font-family: Inter, sans-serif;
+}
+
+.navbar,
+.hero-section,
+.advantage-section,
+.collaboration-section,
+.plans-section,
+.other-section {
+    background-color: #000000;
+    min-width: 100%;
+
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+h1,
+h2,
+h3 {
+    text-transform: capitalize;
+}
+
+h1 {
+    font-family: Monda, sans-serif;
+    font-size: 85px;
+    line-height: 80px;
+    max-width: 80%;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+.navbar .center,
+.footer .center {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+/* header block */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 28px 50px;
+    align-items: center;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar .right {
+    position: relative;
+    display: flex;
+    gap: 90px;
+    align-items: center;
+}
+
+.navbar .right img {
+    position: absolute;
+    margin-top: -5px;
+}
+
+.navbar .right .btn {
+    border: 1px solid #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.navbar .right .btn::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ffffff;
+    transition: all 0.35s;
+    z-index: -1;
+}
+
+.navbar .right .btn:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+.navbar .right .btn:hover::after {
+    width: 100%;
+}
+
+/* hero section */
+
+.hero-section {
+    display: flex;
+}
+
+.hero-content,
+.hero-img {
+    width: 50%;
+}
+
+.hero-content {
+    padding: 184px 0 184px 120px;
+}
+
+.hero-content>p {
+    margin: 41px 0;
+    font-size: 14px;
+}
+
+.hero-content .get-started {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.hero-content .get-started p {
+    font-size: 26px;
+}
+
+.hero-content .get-started a {
+    position: absolute;
+    transform: translate(155px, 4px);
+    transition: 0.2s ease-in;
+}
+
+.hero-content .get-started a:hover {
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.hero-img img {
+    height: 100%;
+    width: 100%;
+}
+
+/* count section */
+
+.count-section {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #1c1c1c;
+    padding: 75px 0;
+    text-align: center;
+}
+
+.count-section h2 {
+    font-size: 55px;
+    margin-bottom: 11px;
+}
+
+.count-section p {
+    font-size: 20px;
+}
+
+/* advantage section */
+
+.advantage-section {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.advantage-section h2 {
+    margin-bottom: 15px;
+}
+
+.boxes {
+    display: flex;
+    gap: 34px;
+    text-align: left;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.box {
+    max-width: 28%;
+    padding: 56px;
+    background-color: #181619;
+}
+
+.box h3 {
+    margin: 28px 0;
+    font-size: 29px;
+}
+
+.box p {
+    color: #6D6D6D;
+    font-size: 26px;
+}
+
+/* bg section */
+
+.bg {
+    background: url('../assets/images/bg.png') fixed no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 30px;
+}
+
+.bg-large {
+    padding: 160px 0;
+}
+
+.bg-small {
+    padding: 91px 0;
+    align-items: center;
+}
+
+.bg h2 {
+    font-family: Monda, sans-serif;
+    line-height: 80px;
+    font-size: 85px;
+    margin-bottom: 0;
+}
+
+/* collaboration section */
+
+.collaboration-section {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.collaboration-section h2 {
+    margin-bottom: 15px;
+}
+
+.collaboration-section .img {
+    margin-top: 93px;
+    gap: 34px;
+    display: flex;
+    justify-content: center;
+}
+
+/* plans section */
+
+.plans-section {
+    padding: 75px 0;
+}
+
+.plans-section h2 {
+    width: 35%;
+    margin-left: 200px;
+}
+
+.plans-section p {
+    width: 55%;
+}
+
+.plans-section a {
+    width: 10%;
+    text-align: right;
+    margin-right: 200px;
+}
+
+.plans-section .plan {
+    display: flex;
+    align-items: center;
+}
+
+.plan img {
+    height: 44px;
+    width: 43px;
+}
+
+.plans-section .plan:nth-child(2) {
+    margin: 78px 0;
+}
+
+/* footer block */
+
+.footer {
+    display: flex;
+    background-color: #1B1D1C;
+    justify-content: space-between;
+    padding: 25px 50px;
+    align-items: center;
+}
+
+.footer .right {
+    display: flex;
+    gap: 16px;
+}
+
+.footer .right a {
+    transition: transform 0.5s ease-in;
+}
+
+.footer .right a:hover {
+    transform: scale(110%);
+}
+
+/* media query */
+
+@media (max-width:1642px) {
+    h1 {
+        font-size: 70px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .count-section h2 {
+        font-size: 45px;
+        margin-bottom: 11px;
+    }
+
+    .box {
+        max-width: 25%;
+        padding: 35px;
+    }
+
+    .box img {
+        max-height: 50px;
+        max-width: 50px;
+    }
+
+    .box h3 {
+        font-size: 22px;
+    }
+
+    .box p {
+        font-size: 19px;
+    }
+
+    .bg h2 {
+        font-size: 65px;
+    }
+
+    .bg img {
+        width: 86px;
+        height: 75px;
+    }
+
+    .collaboration-section .img img:first-child {
+        width: 335px;
+    }
+
+    .collaboration-section .img img:last-child {
+        width: 720px;
+    }
+
+    .plans-section img {
+        max-width: 35px;
+        max-height: 35px;
+    }
+}
+
+@media (max-width:1400.98px) {
+    .navbar .right {
+        gap: 55px;
+    }
+
+    .hero-content {
+        padding: 120px 0 120px 100px;
+    }
+
+    h1 {
+        font-size: 54px;
+        line-height: 60px;
+        max-width: 70%;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .hero-content>p {
+        margin: 30px 0;
+    }
+
+    .hero-content img {
+        max-height: 50px;
+        max-width: 50px;
+    }
+
+    .count-section {
+        padding: 50px 0;
+    }
+
+    .advantage-section {
+        padding: 80px 0;
+    }
+
+    .boxes {
+        margin-top: 50px;
+    }
+
+    .box {
+        max-width: 21%;
+        padding: 28px;
+    }
+
+    .box img {
+        max-height: 40px;
+        max-width: 40px;
+    }
+
+    .box h3 {
+        margin: 22px 0;
+        font-size: 20px;
+    }
+
+    .box p {
+        font-size: 16px;
+    }
+
+    .bg-large {
+        padding: 90px 0;
+    }
+
+    .bg h2 {
+        line-height: 60px;
+        font-size: 56px;
+    }
+
+    .bg img {
+        max-height: 52px;
+        max-width: 55px;
+    }
+
+    .bg-small {
+        padding: 75px 0;
+    }
+
+    .plans-section h2 {
+        margin-left: 160px;
+    }
+
+    .plans-section a {
+        margin-right: 160px;
+    }
+}
